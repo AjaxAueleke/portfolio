@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ahmed - Software Engineer</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --accent: #3b82f6;
+            --bg: #f8fafc;
+            --text: #334155;
+            --light: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-info a:hover {
+            opacity: 1;
+        }
+        
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background: var(--bg);
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            border: 1px solid var(--light);
+        }
+        
+        .experience-item {
+            margin-bottom: 25px;
+        }
+        
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .date {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .role {
+            font-style: italic;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        
+        .responsibilities {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        
+        .responsibilities li {
+            margin-bottom: 5px;
+        }
+        
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .cert-card {
+            background: var(--bg);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--primary);
+        }
+        
+        .cert-title {
+            font-weight: 600;
+        }
+        
+        .cert-issuer {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+        
+        .project {
+            margin-bottom: 20px;
+        }
+        
+        .project h3 {
+            color: var(--secondary);
+            margin-bottom: 5px;
+        }
+        
+        .project-link {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .education-degree {
+            font-weight: 600;
+        }
+        
+        .education-school {
+            color: #64748b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Muhammad Ahmed</h1>
+            <p>Senior Software Engineer</p>
+            <div class="contact-info">
+                <a href="mailto:ahmed.jamil7410@gmail.com">ahmed.jamil7410@gmail.com</a>
+                <a href="https://github.com/AjaxAueleke">GitHub</a>
+                <a href="https://linkedin.com/in/muhammad-ahmed-1a2b3c">LinkedIn</a>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Senior Software Engineer with 6+ years of experience in designing, developing, and maintaining scalable backend systems. Proficient in modern JavaScript/TypeScript technologies with expertise in NestJS, Node.js, and cloud infrastructure. Proven track record of building high-performance applications and leading technical initiatives.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">TypeScript</div>
+                <div class="skill-tag">Node.js</div>
+                <div class="skill-tag">NestJS</div>
+                <div class="skill-tag">React</div>
+                <div class="skill-tag">PostgreSQL</div>
+                <div class="skill-tag">MongoDB</div>
+                <div class="skill-tag">Redis</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">Kubernetes</div>
+                <div class="skill-tag">AWS</div>
+                <div class="skill-tag">GraphQL</div>
+                <div class="skill-tag">REST APIs</div>
+                <div class="skill-tag">Microservices</div>
+                <div class="skill-tag">CI/CD</div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Presentix</span>
+                    <span class="date">Sep 2023 - Present</span>
+                </div>
+                <div class="role">Senior Software Engineer</div>
+                <ul class="responsibilities">
+                    <li>Spearheaded the migration from monolithic architecture to microservices using NestJS and TypeScript</li>
+                    <li>Implemented robust CI/CD pipelines using GitHub Actions and ArgoCD for automated deployments</li>
+                    <li>Designed and developed a scalable GraphQL API layer, reducing query response time by 40%</li>
+                    <li>Led a team of 4 engineers in implementing a real-time notification system using WebSockets</li>
+                    <li>Optimized database queries and implemented caching strategies, improving system performance by 60%</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Tez Deal</span>
+                    <span class="date">Jun 2022 - Aug 2023</span>
+                </div>
+                <div class="role">Software Engineer</div>
+                <ul class="responsibilities">
+                    <li>Developed and maintained RESTful APIs using Node.js and Express, serving 100K+ daily requests</li>
+                    <li>Implemented JWT authentication and role-based access control for secure user management</li>
+                    <li>Integrated third-party payment gateways (Stripe, PayPal) for seamless transactions</li>
+                    <li>Built real-time chat functionality using Socket.io for customer support</li>
+                    <li>Mentored junior developers and conducted code reviews to ensure quality standards</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Knowledge Platform</span>
+                    <span class="date">Sep 2021 - May 2022</span>
+                </div>
+                <div class="role">Junior Software Engineer</div>
+                <ul class="responsibilities">
+                    <li>Built REST APIs using Node.js and PostgreSQL for educational content management</li>
+                    <li>Developed React-based frontend components for the learning management system</li>
+                    <li>Implemented automated testing suite achieving 85% code coverage</li>
+                    <li>Collaborated with cross-functional teams to deliver features on time</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Fiverr (Freelance)</span>
+                    <span class="date">Jan 2020 - Aug 2021</span>
+                </div>
+                <div class="role">Full Stack Developer</div>
+                <ul class="responsibilities">
+                    <li>Delivered 20+ custom web applications for clients worldwide</li>
+                    <li>Built RESTful APIs and real-time applications using Node.js, Express, and Socket.io</li>
+                    <li>Developed responsive frontends using React and modern CSS frameworks</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Key Projects</h2>
+            
+            <div class="project">
+                <h3>E-Commerce Microservices Platform</h3>
+                <p>Designed and implemented a scalable e-commerce platform using NestJS microservices architecture. Implemented event-driven communication using RabbitMQ, with Kubernetes orchestration on AWS EKS.</p>
+            </div>
+            
+            <div class="project">
+                <h3>Real-time Analytics Dashboard</h3>
+                <p>Built a real-time analytics dashboard processing 1M+ events daily. Used Redis for caching, PostgreSQL for data persistence, and WebSockets for live updates.</p>
+            </div>
+            
+            <div class="project">
+                <h3>Task Management System</h3>
+                <p>Developed a collaborative task management application with real-time updates, file attachments, and team collaboration features. Tech stack: React, Node.js, MongoDB, Socket.io.</p>
+            </div>
+        </section>
+        
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-title">Certified Kubernetes Administrator (CKA)</div>
+                    <div class="cert-issuer">Cloud Native Computing Foundation</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-title">Certified Kubernetes Application Developer (CKAD)</div>
+                    <div class="cert-issuer">Cloud Native Computing Foundation</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-title">AWS Solutions Architect Associate</div>
+                    <div class="cert-issuer">Amazon Web Services</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-title">Google Cloud Professional Developer</div>
+                    <div class="cert-issuer">Google Cloud</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="education-degree">B.Sc. in Computer Science</div>
+                <div class="education-school">International Islamic University Malaysia (IIUM)</div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Muhammad Ahmed. All rights reserved.</p>
+    </footer>
+</body>
+</html>
