@@ -226,16 +226,16 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>Software Engineer with 4+ years of experience in full-stack development and cloud technologies. Proven expertise in building scalable backend systems, AI applications, and computer vision solutions. Achieved "Top Rated Plus" status on Upwork (top 10% of freelancers). Strong problem-solving skills with a track record of delivering high-quality projects.</p>
-        </section>
+            <p>Software Engineer with 4+ years of experience in full-stack development, backend systems, and cloud technologies. Specialized in Go backend services for multi-cloud data migrations with a focus on cross-cloud reliability and security. Achieved "Top Rated Plus" status on Upwork (top 10% of freelancers). Comfortable with fully remote work and async communication across time zones.</p>
+        <section>
         
         <section id="skills">
             <h2>Technical Skills</h2>
             <div class="skills-grid">
+                <div class="skill-tag">Go</div>
                 <div class="skill-tag">TypeScript</div>
                 <div class="skill-tag">Python</div>
                 <div class="skill-tag">JavaScript</div>
-                <div class="skill-tag">Go</div>
                 <div class="skill-tag">ReactJS</div>
                 <div class="skill-tag">Django</div>
                 <div class="skill-tag">NestJS</div>
@@ -250,6 +250,7 @@
                 <div class="skill-tag">Docker</div>
                 <div class="skill-tag">Computer Vision</div>
                 <div class="skill-tag">WebSockets</div>
+                <div class="skill-tag">Distributed Systems</div>
             </div>
         </section>
         
@@ -263,9 +264,10 @@
                 </div>
                 <div class="role">Associate Software Development Engineer</div>
                 <ul class="responsibilities">
+                    <li>Write Go backend services for multi-cloud data migrations.</li>
                     <li>Partnered with product, design, and front-end teams to re-engineer platform navigation, deploying an opt-in flow and analytics dashboard that drove 10% user adoption rate within the first month.</li>
-                    <li>Developed asynchronous abort functionality using Redis Pub/Sub and Golang concurrency patterns, allowing users to safely terminate ongoing migrations. Reduced customer escalations by ~30%.</li>
-                    <li>Enhanced cross-platform data migration service in Go with robust validation and error handling for multiple cloud provider integrations.</li>
+                    <li>Built graceful shutdown system using Redis Pub/Sub and Go concurrency to safely abort stuck jobs without corrupting data, cutting escalation tickets by ~30%.</li>
+                    <li>Enhanced cross-platform data migration service with robust validation and error handling for multiple cloud provider integrations.</li>
                     <li>Optimized CI pipeline in Bitbucket, reducing build time and improving developer efficiency.</li>
                 </ul>
             </div>
@@ -278,6 +280,7 @@
                 <div class="role">Freelance Software Engineer</div>
                 <ul class="responsibilities">
                     <li>Achieved "Top Rated Plus" status on Upwork - top 10% of freelancers on the platform.</li>
+                    <li>Built backends for clients across time zones - experienced with async communication and owning features end-to-end.</li>
                     <li>Led full-stack development for a US-based litigation firm using ReactJS and Django - 5-star client review.</li>
                     <li>Built complete backend for an AI application that transcribes and summarizes patient sessions, deployed on AWS EC2 and S3.</li>
                     <li>Developed Automatic Number Plate Recognition (ANPR) system with 90% accuracy using Python, YOLOv8, and Pytesseract. Deployed on Jetson Nano devices in Singapore condominiums.</li>
@@ -299,6 +302,11 @@
         
         <section id="projects">
             <h2>Key Projects</h2>
+            
+            <div class="project">
+                <h3>Multi-Cloud Data Migration Service</h3>
+                <p>Go backend services for multi-cloud data migrations with robust validation, error handling, and graceful shutdown using Redis Pub/Sub.</p>
+            </div>
             
             <div class="project">
                 <h3>AI Transcription & Summarization App</h3>
