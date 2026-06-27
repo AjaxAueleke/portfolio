@@ -6,10 +6,15 @@ skills, work experience, key projects, certifications, education, and languages.
 
 ## Tech stack
 
-- **HTML5** — semantic markup (`header`, `main`, `section`, `footer`).
+- **HTML5** — semantic markup (`header`, `main`, `section`, `footer`, `address`
+  for the contact block, `time` for experience dates).
 - **CSS3** — vanilla CSS using custom properties (CSS variables), Flexbox, and CSS
   Grid for a responsive layout. The stylesheet lives inline in a single `<style>`
   block in `index.html`.
+- **Accessibility** — keyboard `:focus-visible` outlines, a `prefers-reduced-motion`
+  fallback, and labelled contact links.
+- **Inline SVG favicon** — embedded as a data URI, so the site ships with no external
+  asset files.
 - **No JavaScript, no build step, no dependencies** — it is a fully static page.
 
 ## Project structure
