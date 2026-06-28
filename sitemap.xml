@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Single-page portfolio: one real, indexable URL (the homepage).
+  In-page anchors (#work, #experience, #stack, #contact) are fragments of this
+  same document, not separate pages, so they are intentionally NOT listed —
+  search engines canonicalise them to the homepage.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://low-cows.surge.sh/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

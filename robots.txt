@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://low-cows.surge.sh/sitemap.xml
