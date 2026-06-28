@@ -39,12 +39,10 @@ robots.txt    # allow all + sitemap reference
 python3 -m http.server 8000   # then open http://localhost:8000
 ```
 
-## Deploy (Surge)
+## Deploy
 
-```bash
-npx surge . low-cows.surge.sh
-```
+Hosted on **GitHub Pages** from the `master` branch root — every push to `master` republishes automatically.
 
 ## Live
 
-[low-cows.surge.sh](https://low-cows.surge.sh)
+[ajaxaueleke.github.io/portfolio](https://ajaxaueleke.github.io/portfolio/)

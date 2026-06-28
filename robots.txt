@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://low-cows.surge.sh/sitemap.xml
+Sitemap: https://ajaxaueleke.github.io/portfolio/sitemap.xml
