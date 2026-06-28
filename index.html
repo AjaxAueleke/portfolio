@@ -1,280 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.className = "js";</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muhammad Ahmed — Backend &amp; DevOps Engineer</title>
-  <meta name="description" content="Muhammad Ahmed — Backend &amp; DevOps Software Engineer. 3+ years building reliable, scalable services in Go, Python, TypeScript and Rust on AWS. CKA certified." />
+  <title>Muhammad Ahmed — Backend &amp; Systems Engineer</title>
+  <meta name="description" content="Muhammad Ahmed — Backend &amp; Systems Engineer. 3+ years building reliable, correctness-first services and cloud infrastructure in Go, Rust, Python and TypeScript. CKA certified." />
   <meta name="author" content="Muhammad Ahmed" />
-  <meta name="theme-color" content="#0b1020" />
-  <!-- Open Graph -->
-  <meta property="og:title" content="Muhammad Ahmed — Backend &amp; DevOps Engineer" />
-  <meta property="og:description" content="Backend &amp; DevOps engineer — Go, Python, TypeScript, Rust, Kubernetes (CKA). Building reliable, scalable cloud-native services." />
+  <meta name="theme-color" content="#e7e8e3" />
+  <meta property="og:title" content="Muhammad Ahmed — Backend &amp; Systems Engineer" />
+  <meta property="og:description" content="Backend &amp; systems engineer — Go, Rust, Python, TypeScript, Kubernetes. Reliable, correctness-first services and infrastructure." />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2338bdf8'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='30' font-weight='700' fill='%230b1020'%3EMA%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23e7e8e3'/%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23e8521e' stroke-width='3'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='26' font-weight='700' fill='%2318181b'%3Ema%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;450;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#hero">Skip to content</a>
 
-  <header class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#hero" class="brand"><span class="brand-mark">MA</span> Muhammad&nbsp;Ahmed</a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#about">About</a>
+  <header class="masthead" id="masthead">
+    <div class="wrap masthead-inner">
+      <a class="sig" href="#hero" aria-label="Muhammad Ahmed — home">
+        <span class="sig-mark">ma</span><span class="sig-name">Muhammad&nbsp;Ahmed</span>
+      </a>
+      <nav class="mast-nav" aria-label="Primary">
+        <a href="#work">Work</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#stack">Stack</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
-        <span aria-hidden="true">◐</span>
+      <button id="theme-toggle" class="toggle" type="button" aria-label="Switch colour theme">
+        <span class="toggle-dot" aria-hidden="true"></span><span class="toggle-label">theme</span>
       </button>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
+  <main>
+    <!-- HERO / identity record -->
     <section class="hero" id="hero">
-      <div class="hero-inner reveal">
-        <p class="eyebrow">Karachi, Pakistan · Open to opportunities</p>
-        <h1>Muhammad Ahmed</h1>
-        <p class="hero-role">Backend &amp; DevOps Software Engineer</p>
-        <p class="hero-tagline">
-          I build reliable, scalable services in <strong>Go</strong>, <strong>Python</strong>,
-          <strong>TypeScript</strong> and <strong>Rust</strong> across SaaS and cloud-native systems on AWS.
-          3+ years shipping correctness-first APIs and infrastructure. <strong>CKA</strong> certified.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects">View my work</a>
-          <a class="btn" href="mailto:ahmed.jamil7410@gmail.com">Get in touch</a>
-        </div>
-        <div class="hero-links">
-          <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/muhammad-ahmed-jamil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:ahmed.jamil7410@gmail.com">Email</a>
+      <div class="wrap">
+        <p class="kicker stagger">Backend &amp; Systems Engineer — Karachi, PK</p>
+        <h1 class="nameplate stagger">Muhammad Ahmed</h1>
+        <dl class="record">
+          <div class="record-row stagger">
+            <dt>focus</dt>
+            <dd>Reliable, correctness-first backend services and cloud infrastructure.</dd>
+          </div>
+          <div class="record-row stagger">
+            <dt>stack</dt>
+            <dd>Go · Rust · Python · TypeScript · Kubernetes</dd>
+          </div>
+          <div class="record-row stagger">
+            <dt>history</dt>
+            <dd>3+ yrs · SDE @ Veeam <span class="dim">(ex-Securiti.ai)</span> · CKA certified</dd>
+          </div>
+          <div class="record-row stagger">
+            <dt>status</dt>
+            <dd><span class="status"><span class="status-dot" aria-hidden="true"></span>Available for work</span></dd>
+          </div>
+        </dl>
+        <div class="hero-actions stagger">
+          <a class="lnk lnk-strong" href="#work">Selected work</a>
+          <a class="lnk" href="mailto:ahmed.jamil7410@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <a class="lnk" href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a class="lnk" href="https://www.linkedin.com/in/muhammad-ahmed-jamil" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="section-head reveal">
-        <span class="section-num">01</span>
-        <h2>About</h2>
-      </div>
-      <div class="about reveal">
-        <p>
-          I'm a backend engineer who cares about <strong>correctness, clean API design, and reliability</strong>.
-          At Veeam (formerly Securiti.ai) I work on distributed SaaS platforms — multi-cloud storage integration,
-          safe migration flows, and observability — collaborating closely with product, design and operations to ship.
-        </p>
-        <p>
-          Before that I freelanced as a <strong>Top Rated Plus</strong> engineer on Upwork (top 10%), delivering
-          full-stack, ML and computer-vision projects for US clients end-to-end. I like systems-level problems —
-          from a Vault-style secrets manager in Rust to Mach-style IPC over UNIX sockets — and multi-cloud
-          infrastructure as code.
-        </p>
+    <section class="row" id="about">
+      <div class="wrap row-grid">
+        <p class="row-label">About</p>
+        <div class="row-body prose">
+          <p>
+            I'm a backend engineer who optimises for <strong>correctness, clean API design, and reliability</strong>.
+            At Veeam (formerly Securiti.ai) I work on distributed SaaS platforms — multi-cloud storage,
+            safe migration flows, and observability — shipping closely with product and operations.
+          </p>
+          <p>
+            Before that I was <strong>Top Rated Plus</strong> on Upwork (top 10%), owning full-stack, ML and
+            computer-vision projects end-to-end. I'm drawn to systems-level problems: a Vault-style secrets
+            manager in Rust, Mach-style IPC over UNIX sockets, multi-cloud infrastructure as code.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="section-head reveal">
-        <span class="section-num">02</span>
-        <h2>Experience</h2>
-      </div>
-      <ol class="timeline">
-        <li class="timeline-item reveal">
-          <div class="t-meta"><time>Oct 2025 — Present</time></div>
-          <div class="t-body">
-            <h3>Software Development Engineer</h3>
-            <p class="t-org">Veeam Software <span>(formerly Securiti.ai)</span> · Karachi</p>
-            <ul>
-              <li>Built multi-provider storage integration (S3-compatible + GCP) with GDPR-aware routing for a distributed SaaS platform — adopted by multiple enterprise customers with zero data-correctness incidents.</li>
-              <li>Cut private-cloud escalations ~30% with a safe migration-abort flow built on Redis Pub/Sub and Go concurrency.</li>
+    <section class="row" id="experience">
+      <div class="wrap row-grid">
+        <p class="row-label">Experience</p>
+        <div class="row-body">
+          <article class="entry">
+            <p class="entry-when">Oct 2025 — Now</p>
+            <h3 class="entry-role">Software Development Engineer <span class="entry-org">· Veeam Software</span></h3>
+            <ul class="entry-points">
+              <li>Built multi-provider storage integration (S3-compatible + GCP) with GDPR-aware routing — adopted by multiple enterprise customers with zero data-correctness incidents.</li>
+              <li>Cut private-cloud escalations ~30% via a safe migration-abort flow on Redis Pub/Sub and Go concurrency.</li>
               <li>Replaced a third-party feature-flag service with a lightweight internal one, removing CVE/SDK churn in an air-gapped Kubernetes environment.</li>
             </ul>
-          </div>
-        </li>
-        <li class="timeline-item reveal">
-          <div class="t-meta"><time>Jul 2024 — Oct 2025</time></div>
-          <div class="t-body">
-            <h3>Associate Software Development Engineer</h3>
-            <p class="t-org">Veeam Software · Karachi</p>
-            <ul>
-              <li>Improved reliability and observability across production microservices — fault tolerance, monitoring and instrumentation in Go and Python — while shipping user-facing improvements on time.</li>
+          </article>
+          <article class="entry">
+            <p class="entry-when">Jul 2024 — Oct 2025</p>
+            <h3 class="entry-role">Associate Software Development Engineer <span class="entry-org">· Veeam Software</span></h3>
+            <ul class="entry-points">
+              <li>Improved reliability and observability across production microservices — fault tolerance, monitoring and instrumentation in Go and Python.</li>
             </ul>
-          </div>
-        </li>
-        <li class="timeline-item reveal">
-          <div class="t-meta"><time>Dec 2022 — Jul 2024</time></div>
-          <div class="t-body">
-            <h3>Freelance Software Engineer</h3>
-            <p class="t-org">Top Rated Plus on Upwork · Remote</p>
-            <ul>
-              <li>Delivered a React/Django web app on AWS (EC2, S3, RDS, CodePipeline) for a litigation firm — 5-star review.</li>
-              <li>Deployed a YOLOv8 + Pytesseract ANPR system on Jetson Nano (~90% accuracy) and an AI session-transcription backend (Python/Django, MySQL, AWS), owned end-to-end.</li>
+          </article>
+          <article class="entry">
+            <p class="entry-when">Dec 2022 — Jul 2024</p>
+            <h3 class="entry-role">Freelance Software Engineer <span class="entry-org">· Top Rated Plus, Upwork</span></h3>
+            <ul class="entry-points">
+              <li>Shipped a React/Django app on AWS (EC2, S3, RDS, CodePipeline) for a litigation firm — 5-star review.</li>
+              <li>Deployed a YOLOv8 + Pytesseract ANPR system on Jetson Nano (~90% accuracy) and an AI transcription backend, owned end-to-end.</li>
             </ul>
-          </div>
-        </li>
-        <li class="timeline-item reveal">
-          <div class="t-meta"><time>Feb 2022 — Jun 2023</time></div>
-          <div class="t-body">
-            <h3>Associate Software Engineer</h3>
-            <p class="t-org">KoderLabs · Karachi</p>
-            <ul>
-              <li>Built a computer-vision measurement pipeline (Python, OpenCV, Azure) at 80–85% accuracy, removing manual on-site surveys — sole engineer from spec to deployment.</li>
-              <li>Built the entire backend for a real-time social-news app solo (NestJS, TypeScript, MongoDB, WebSockets).</li>
+          </article>
+          <article class="entry">
+            <p class="entry-when">Feb 2022 — Jun 2023</p>
+            <h3 class="entry-role">Associate Software Engineer <span class="entry-org">· KoderLabs</span></h3>
+            <ul class="entry-points">
+              <li>Built a computer-vision measurement pipeline (Python, OpenCV, Azure) at 80–85% accuracy — sole engineer, spec to deployment.</li>
+              <li>Built a real-time social-news backend solo (NestJS, TypeScript, MongoDB, WebSockets).</li>
             </ul>
-          </div>
-        </li>
-      </ol>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="section-head reveal">
-        <span class="section-num">03</span>
-        <h2>Selected Projects</h2>
-      </div>
-      <div class="projects">
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="card-icon">🔐</span>
-            <a class="card-gh" href="https://github.com/AjaxAueleke/secrets-platform" target="_blank" rel="noopener noreferrer" aria-label="secrets-platform on GitHub">↗</a>
-          </div>
-          <h3>secrets-platform</h3>
-          <p>Self-hosted, multi-tenant secrets manager in Rust (Vault-style): versioned secrets, envelope encryption at rest, and a path-aware policy engine. Built to learn idiomatic Rust and API design.</p>
-          <ul class="tags"><li>Rust</li><li>axum</li><li>sqlx</li><li>PostgreSQL</li></ul>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="card-icon">☁️</span>
-            <a class="card-gh" href="https://github.com/Moody-san/terraform-multicloud-infra" target="_blank" rel="noopener noreferrer" aria-label="terraform-multicloud-infra on GitHub">↗</a>
-          </div>
-          <h3>terraform-multicloud-infra</h3>
-          <p>Multi-cloud Terraform provisioning a highly-available Kubernetes + Galera platform across AWS, Azure and Oracle Cloud, joined by a BGP/IPSec VPN mesh, with a remote S3 + DynamoDB backend.</p>
-          <ul class="tags"><li>Terraform</li><li>AWS</li><li>Azure</li><li>OCI</li><li>Kubernetes</li></ul>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="card-icon">🩺</span>
-            <a class="card-gh" href="https://github.com/AjaxAueleke/mgfrontend" target="_blank" rel="noopener noreferrer" aria-label="mgfrontend on GitHub">↗</a>
-          </div>
-          <h3>mgfrontend</h3>
-          <p>Patient storefront for a dermatology appointment platform — doctor search, appointment booking and Stripe payments. Built with Next.js, TypeScript and Redux Toolkit.</p>
-          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Redux</li><li>Stripe</li></ul>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="card-icon">📨</span>
-            <a class="card-gh" href="https://github.com/AjaxAueleke/machipc" target="_blank" rel="noopener noreferrer" aria-label="machipc on GitHub">↗</a>
-          </div>
-          <h3>machipc</h3>
-          <p>Mach-style message-passing IPC reimplemented in C++ over Linux UNIX sockets — ports, mailboxes, and a bootstrap server with a direct process-to-process message path.</p>
-          <ul class="tags"><li>C++</li><li>Systems</li><li>UNIX sockets</li><li>IPC</li></ul>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="card-icon">📊</span>
-            <a class="card-gh" href="https://github.com/AjaxAueleke/algo-visualizer" target="_blank" rel="noopener noreferrer" aria-label="algo-visualizer on GitHub">↗</a>
-          </div>
-          <h3>algo-visualizer</h3>
-          <p>Real-time sorting-algorithm visualizer in Python &amp; pygame — watch bubble, insertion, merge, heap, quick, counting and radix sort run step-by-step.</p>
-          <ul class="tags"><li>Python</li><li>pygame</li><li>Algorithms</li></ul>
-        </article>
-
-        <article class="card reveal">
-          <div class="card-top">
-            <span class="card-icon">🗂️</span>
-            <a class="card-gh" href="https://github.com/AjaxAueleke/patient-note-app" target="_blank" rel="noopener noreferrer" aria-label="patient-note-app on GitHub">↗</a>
-          </div>
-          <h3>patient-note-app</h3>
-          <p>Django REST backend for AI-assisted therapy session notes — secure S3 audio uploads and an async SQS transcription/summarisation pipeline.</p>
-          <ul class="tags"><li>Django</li><li>DRF</li><li>AWS S3</li><li>SQS</li></ul>
-        </article>
-      </div>
-      <p class="projects-more reveal">
-        More on <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">github.com/AjaxAueleke</a>
-      </p>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="section-head reveal">
-        <span class="section-num">04</span>
-        <h2>Skills</h2>
-      </div>
-      <div class="skills reveal">
-        <div class="skill-group">
-          <h3>Languages</h3>
-          <ul><li>Go</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Rust</li></ul>
-        </div>
-        <div class="skill-group">
-          <h3>Backend</h3>
-          <ul><li>Django</li><li>NestJS</li><li>Beego</li><li>REST APIs</li><li>Distributed &amp; event-driven systems</li></ul>
-        </div>
-        <div class="skill-group">
-          <h3>Data</h3>
-          <ul><li>PostgreSQL</li><li>MongoDB</li><li>MySQL</li><li>Redis</li></ul>
-        </div>
-        <div class="skill-group">
-          <h3>Cloud &amp; DevOps</h3>
-          <ul><li>AWS</li><li>GCP</li><li>Azure</li><li>Kubernetes (CKA)</li><li>Docker</li><li>Terraform</li><li>CI/CD</li></ul>
-        </div>
-        <div class="skill-group">
-          <h3>ML / CV</h3>
-          <ul><li>YOLOv8</li><li>OpenCV</li><li>Pytesseract</li><li>Jetson Nano</li></ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION + CERTS -->
-    <section class="section" id="education">
-      <div class="section-head reveal">
-        <span class="section-num">05</span>
-        <h2>Education &amp; Certifications</h2>
-      </div>
-      <div class="edu reveal">
-        <div class="edu-card">
-          <h3>BS, Computer Science</h3>
-          <p class="t-org">FAST NUCES, Karachi · <time>Jul 2024</time></p>
-          <p>GPA 3.7 / 4.0 — Summa Cum Laude · 2× Rector's List · 4× Dean's List.</p>
+    <!-- SELECTED WORK -->
+    <section class="row" id="work">
+      <div class="wrap row-grid">
+        <p class="row-label">Selected work</p>
+        <div class="row-body">
+          <ul class="worklist">
+            <li>
+              <a class="work" href="https://github.com/AjaxAueleke/secrets-platform" target="_blank" rel="noopener noreferrer">
+                <span class="work-name">secrets-platform</span>
+                <span class="work-desc">Self-hosted, multi-tenant secrets manager — versioned, envelope-encrypted at rest, policy-gated.</span>
+                <span class="work-tech">Rust · axum · sqlx · Postgres</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="work" href="https://github.com/Moody-san/terraform-multicloud-infra" target="_blank" rel="noopener noreferrer">
+                <span class="work-name">terraform-multicloud-infra</span>
+                <span class="work-desc">HA Kubernetes + Galera across AWS, Azure &amp; Oracle Cloud, joined by a BGP/IPSec VPN mesh.</span>
+                <span class="work-tech">Terraform · AWS · Azure · OCI</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="work" href="https://github.com/AjaxAueleke/machipc" target="_blank" rel="noopener noreferrer">
+                <span class="work-name">machipc</span>
+                <span class="work-desc">Mach-style message-passing IPC — ports, mailboxes and a bootstrap server over UNIX sockets.</span>
+                <span class="work-tech">C++ · systems · sockets</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="work" href="https://github.com/AjaxAueleke/mgfrontend" target="_blank" rel="noopener noreferrer">
+                <span class="work-name">mgfrontend</span>
+                <span class="work-desc">Patient storefront for a dermatology platform — doctor search, booking and Stripe payments.</span>
+                <span class="work-tech">Next.js · TypeScript · Redux · Stripe</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="work" href="https://github.com/AjaxAueleke/algo-visualizer" target="_blank" rel="noopener noreferrer">
+                <span class="work-name">algo-visualizer</span>
+                <span class="work-desc">Real-time sorting-algorithm visualiser — seven algorithms animated step-by-step.</span>
+                <span class="work-tech">Python · pygame</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="work" href="https://github.com/AjaxAueleke/patient-note-app" target="_blank" rel="noopener noreferrer">
+                <span class="work-name">patient-note-app</span>
+                <span class="work-desc">Django REST backend for AI-assisted therapy notes — S3 uploads, async SQS pipeline.</span>
+                <span class="work-tech">Django · DRF · AWS</span>
+                <span class="work-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+          <p class="row-foot">Full source — <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">github.com/AjaxAueleke</a></p>
         </div>
-        <div class="edu-card">
-          <h3>Certified Kubernetes Administrator</h3>
-          <p class="t-org">CKA · Cloud Native Computing Foundation</p>
-          <p>Production-grade Kubernetes administration, networking and troubleshooting.</p>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="row" id="stack">
+      <div class="wrap row-grid">
+        <p class="row-label">Stack</p>
+        <div class="row-body">
+          <dl class="defs">
+            <div><dt>Languages</dt><dd>Go, Python, TypeScript, JavaScript, Rust</dd></div>
+            <div><dt>Backend</dt><dd>Django, NestJS, Beego, REST, distributed &amp; event-driven systems</dd></div>
+            <div><dt>Data</dt><dd>PostgreSQL, MongoDB, MySQL, Redis</dd></div>
+            <div><dt>Cloud &amp; DevOps</dt><dd>AWS, GCP, Azure, Kubernetes (CKA), Docker, Terraform, CI/CD</dd></div>
+            <div><dt>ML / CV</dt><dd>YOLOv8, OpenCV, Pytesseract, Jetson Nano</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="row" id="credentials">
+      <div class="wrap row-grid">
+        <p class="row-label">Credentials</p>
+        <div class="row-body">
+          <dl class="defs">
+            <div><dt>Education</dt><dd>BS Computer Science, FAST NUCES — 3.7 GPA, Summa Cum Laude (2024)</dd></div>
+            <div><dt>Certification</dt><dd>Certified Kubernetes Administrator (CKA) — CNCF</dd></div>
+            <div><dt>Honours</dt><dd>2× Rector's List · 4× Dean's List</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="reveal">
-        <span class="section-num">06</span>
-        <h2>Let's talk</h2>
-        <p class="contact-lead">Open to backend / platform engineering roles. The fastest way to reach me is email.</p>
-        <a class="btn btn-primary btn-lg" href="mailto:ahmed.jamil7410@gmail.com">ahmed.jamil7410@gmail.com</a>
-        <address class="contact-links">
-          <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/muhammad-ahmed-jamil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="tel:+923353221516">+92 335 3221516</a>
-        </address>
+    <section class="row" id="contact">
+      <div class="wrap row-grid">
+        <p class="row-label">Contact</p>
+        <div class="row-body">
+          <p class="contact-lead">Open to backend / platform engineering roles. Email is the fastest way to reach me.</p>
+          <a class="contact-email" href="mailto:ahmed.jamil7410@gmail.com">ahmed.jamil7410@gmail.com</a>
+          <p class="contact-alt">
+            <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/muhammad-ahmed-jamil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="tel:+923353221516">+92 335 3221516</a>
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year">2026</span> Muhammad Ahmed · Built from scratch, no template.</p>
+    <div class="wrap footer-inner">
+      <span>Muhammad Ahmed</span>
+      <span>Hand-built — no template, no framework. <span id="year">2026</span></span>
+    </div>
   </footer>
 
   <script src="script.js"></script>
