@@ -1,390 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Muhammad Ahmed, a Software Engineer with 4+ years of experience in full-stack development, cloud, AI, and computer vision. CKA & CKAD certified.">
-    <meta name="author" content="Muhammad Ahmed">
-    <meta name="theme-color" content="#2563eb">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%232563eb'/><text x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-size='34' font-weight='bold' text-anchor='middle' fill='%23ffffff'>MA</text></svg>">
-    <title>Muhammad Ahmed - Software Engineer</title>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Muhammad Ahmed - Software Engineer">
-    <meta property="og:description" content="Software Engineer with 4+ years of experience in full-stack development, cloud, AI, and computer vision. CKA & CKAD certified.">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Muhammad Ahmed - Software Engineer">
-    <meta name="twitter:description" content="Software Engineer with 4+ years of experience in full-stack development, cloud, AI, and computer vision. CKA & CKAD certified.">
-    <style>
-        :root {
-            --primary: #2563eb;
-            --secondary: #1e293b;
-            --bg: #f8fafc;
-            --text: #334155;
-            --light: #e2e8f0;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background: var(--bg);
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--secondary), var(--primary));
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .contact-info {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-style: normal;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            opacity: 0.9;
-            transition: opacity 0.3s;
-        }
-
-        .contact-info a:hover {
-            opacity: 1;
-        }
-
-        a:focus-visible {
-            outline: 2px solid var(--primary);
-            outline-offset: 2px;
-            border-radius: 2px;
-        }
-
-        .contact-info a:focus-visible {
-            outline-color: #ffffff;
-        }
-        
-        section {
-            background: white;
-            margin: 20px 0;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        h2 {
-            color: var(--secondary);
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--light);
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        
-        .skill-tag {
-            background: var(--bg);
-            padding: 8px 16px;
-            border-radius: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-            border: 1px solid var(--light);
-        }
-        
-        .experience-item {
-            margin-bottom: 25px;
-        }
-        
-        .experience-item:last-child {
-            margin-bottom: 0;
-        }
-        
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            margin-bottom: 8px;
-        }
-        
-        .company {
-            font-weight: 600;
-            color: var(--primary);
-        }
-        
-        .date {
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-        
-        .role {
-            font-style: italic;
-            color: var(--secondary);
-            margin-bottom: 10px;
-        }
-        
-        .responsibilities {
-            list-style: disc;
-            padding-left: 20px;
-        }
-        
-        .responsibilities li {
-            margin-bottom: 5px;
-        }
-        
-        .certifications-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-            gap: 15px;
-        }
-        
-        .cert-card {
-            background: var(--bg);
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 3px solid var(--primary);
-        }
-        
-        .cert-title {
-            font-weight: 600;
-        }
-        
-        .cert-issuer {
-            font-size: 0.85rem;
-            color: #64748b;
-        }
-        
-        .project {
-            margin-bottom: 20px;
-        }
-        
-        .project h3 {
-            color: var(--secondary);
-            margin-bottom: 5px;
-        }
-        
-        .education-item {
-            margin-bottom: 15px;
-        }
-        
-        .education-degree {
-            font-weight: 600;
-        }
-        
-        .education-school {
-            color: #64748b;
-        }
-        
-        .achievements {
-            list-style: disc;
-            padding-left: 20px;
-        }
-        
-        .achievements li {
-            margin-bottom: 8px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #64748b;
-        }
-        
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            section {
-                padding: 20px;
-            }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .contact-info a {
-                transition: none;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Ahmed — Backend &amp; DevOps Engineer</title>
+  <meta name="description" content="Muhammad Ahmed — Backend &amp; DevOps Software Engineer. 3+ years building reliable, scalable services in Go, Python, TypeScript and Rust on AWS. CKA certified." />
+  <meta name="author" content="Muhammad Ahmed" />
+  <meta name="theme-color" content="#0b1020" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Muhammad Ahmed — Backend &amp; DevOps Engineer" />
+  <meta property="og:description" content="Backend &amp; DevOps engineer — Go, Python, TypeScript, Rust, Kubernetes (CKA). Building reliable, scalable cloud-native services." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2338bdf8'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='30' font-weight='700' fill='%230b1020'%3EMA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Muhammad Ahmed</h1>
-            <p>Software Engineer</p>
-            <address class="contact-info">
-                <a href="mailto:ahmed.jamil7410@gmail.com">ahmed.jamil7410@gmail.com</a>
-                <a href="tel:+923353221516">+92 335-3221516</a>
-                <a href="https://linkedin.com/in/muhammad-ahmed-jamil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">LinkedIn</a>
-                <span>Karachi, Pakistan</span>
-            </address>
-        </div>
-    </header>
-    
-    <main class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Software Engineer with 4+ years of experience in full-stack development and cloud technologies. Proven expertise in building scalable backend systems, AI applications, and computer vision solutions. Achieved "Top Rated Plus" status on Upwork (top 10% of freelancers). Strong problem-solving skills with a track record of delivering high-quality projects.</p>
-        </section>
-        
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-tag">TypeScript</div>
-                <div class="skill-tag">Python</div>
-                <div class="skill-tag">JavaScript</div>
-                <div class="skill-tag">Go</div>
-                <div class="skill-tag">ReactJS</div>
-                <div class="skill-tag">Django</div>
-                <div class="skill-tag">NestJS</div>
-                <div class="skill-tag">PostgreSQL</div>
-                <div class="skill-tag">MongoDB</div>
-                <div class="skill-tag">MySQL</div>
-                <div class="skill-tag">Redis</div>
-                <div class="skill-tag">AWS</div>
-                <div class="skill-tag">Azure</div>
-                <div class="skill-tag">GCP</div>
-                <div class="skill-tag">Kubernetes</div>
-                <div class="skill-tag">Docker</div>
-                <div class="skill-tag">Computer Vision</div>
-                <div class="skill-tag">WebSockets</div>
-            </div>
-        </section>
-        
-        <section id="experience">
-            <h2>Work Experience</h2>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="company">Securiti.ai</span>
-                    <span class="date"><time datetime="2024-07">July 2024</time> – Present</span>
-                </div>
-                <div class="role">Associate Software Development Engineer</div>
-                <ul class="responsibilities">
-                    <li>Partnered with product, design, and front-end teams to re-engineer platform navigation, deploying an opt-in flow and analytics dashboard that drove 10% user adoption rate within the first month.</li>
-                    <li>Developed asynchronous abort functionality using Redis Pub/Sub and Golang concurrency patterns, allowing users to safely terminate ongoing migrations. Reduced customer escalations by ~30%.</li>
-                    <li>Enhanced cross-platform data migration service in Go with robust validation and error handling for multiple cloud provider integrations.</li>
-                    <li>Optimized CI pipeline in Bitbucket, reducing build time and improving developer efficiency.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="company">Upwork (Freelance)</span>
-                    <span class="date"><time datetime="2022-12">December 2022</time> – <time datetime="2024-07">July 2024</time></span>
-                </div>
-                <div class="role">Freelance Software Engineer</div>
-                <ul class="responsibilities">
-                    <li>Achieved "Top Rated Plus" status on Upwork - top 10% of freelancers on the platform.</li>
-                    <li>Led full-stack development for a US-based litigation firm using ReactJS and Django - 5-star client review.</li>
-                    <li>Built complete backend for an AI application that transcribes and summarizes patient sessions, deployed on AWS EC2 and S3.</li>
-                    <li>Developed Automatic Number Plate Recognition (ANPR) system with 90% accuracy using Python, YOLOv8, and Pytesseract. Deployed on Jetson Nano devices in Singapore condominiums.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="company">KoderLabs</span>
-                    <span class="date"><time datetime="2022-02">February 2022</time> – <time datetime="2023-06">June 2023</time></span>
-                </div>
-                <div class="role">Associate Software Engineer</div>
-                <ul class="responsibilities">
-                    <li>Engineered computer vision system for automated swimming pool coping measurements, achieving 80-85% accuracy and eliminating 100% of manual on-site labor.</li>
-                    <li>Built entire backend for a real-time social media news application using NestJS and TypeScript as the sole engineer. Features included WebSocket messaging, content recommendation, and dynamic social feeds.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="projects">
-            <h2>Key Projects</h2>
-            
-            <div class="project">
-                <h3>AI Transcription & Summarization App</h3>
-                <p>Full backend development for an AI application that transcribes and summarizes patient sessions. Tech: Python/Django, MySQL, AWS EC2, S3.</p>
-            </div>
-            
-            <div class="project">
-                <h3>ANPR System</h3>
-                <p>Automatic Number Plate Recognition system for automated parking entrances. Achieved 90% accuracy. Tech: Python, YOLOv8, Pytesseract, Jetson Nano.</p>
-            </div>
-            
-            <div class="project">
-                <h3>Real-time Social Media News App</h3>
-                <p>Backend architecture for a social media news application with real-time features. Tech: NestJS, TypeScript, MongoDB, WebSockets.</p>
-            </div>
-            
-            <div class="project">
-                <h3>Litigation Firm Web Application</h3>
-                <p>Full-stack development for US-based client. Tech: ReactJS, Django, PostgreSQL, AWS.</p>
-            </div>
-        </section>
-        
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-title">Certified Kubernetes Administrator (CKA)</div>
-                    <div class="cert-issuer">Cloud Native Computing Foundation</div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-title">Certified Kubernetes Application Developer (CKAD)</div>
-                    <div class="cert-issuer">Cloud Native Computing Foundation</div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <div class="education-degree">Bachelor of Science, Computer Science</div>
-                <div class="education-school">FAST NUCES, Karachi, Pakistan</div>
-                <p>GPA: 3.7/4.0, Summa Cum Laude</p>
-                <ul class="achievements">
-                    <li>2x Rector List, 4x Dean's List</li>
-                    <li>Member of Google Developer Student Club</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section id="languages">
-            <h2>Languages</h2>
-            <ul class="achievements">
-                <li>Urdu (Native)</li>
-                <li>English (Advanced)</li>
-            </ul>
-        </section>
-    </main>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <footer>
-        <p>&copy; 2026 Muhammad Ahmed. All rights reserved.</p>
-    </footer>
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="brand"><span class="brand-mark">MA</span> Muhammad&nbsp;Ahmed</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-inner reveal">
+        <p class="eyebrow">Karachi, Pakistan · Open to opportunities</p>
+        <h1>Muhammad Ahmed</h1>
+        <p class="hero-role">Backend &amp; DevOps Software Engineer</p>
+        <p class="hero-tagline">
+          I build reliable, scalable services in <strong>Go</strong>, <strong>Python</strong>,
+          <strong>TypeScript</strong> and <strong>Rust</strong> across SaaS and cloud-native systems on AWS.
+          3+ years shipping correctness-first APIs and infrastructure. <strong>CKA</strong> certified.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View my work</a>
+          <a class="btn" href="mailto:ahmed.jamil7410@gmail.com">Get in touch</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhammad-ahmed-jamil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:ahmed.jamil7410@gmail.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about reveal">
+        <p>
+          I'm a backend engineer who cares about <strong>correctness, clean API design, and reliability</strong>.
+          At Veeam (formerly Securiti.ai) I work on distributed SaaS platforms — multi-cloud storage integration,
+          safe migration flows, and observability — collaborating closely with product, design and operations to ship.
+        </p>
+        <p>
+          Before that I freelanced as a <strong>Top Rated Plus</strong> engineer on Upwork (top 10%), delivering
+          full-stack, ML and computer-vision projects for US clients end-to-end. I like systems-level problems —
+          from a Vault-style secrets manager in Rust to Mach-style IPC over UNIX sockets — and multi-cloud
+          infrastructure as code.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="t-meta"><time>Oct 2025 — Present</time></div>
+          <div class="t-body">
+            <h3>Software Development Engineer</h3>
+            <p class="t-org">Veeam Software <span>(formerly Securiti.ai)</span> · Karachi</p>
+            <ul>
+              <li>Built multi-provider storage integration (S3-compatible + GCP) with GDPR-aware routing for a distributed SaaS platform — adopted by multiple enterprise customers with zero data-correctness incidents.</li>
+              <li>Cut private-cloud escalations ~30% with a safe migration-abort flow built on Redis Pub/Sub and Go concurrency.</li>
+              <li>Replaced a third-party feature-flag service with a lightweight internal one, removing CVE/SDK churn in an air-gapped Kubernetes environment.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="t-meta"><time>Jul 2024 — Oct 2025</time></div>
+          <div class="t-body">
+            <h3>Associate Software Development Engineer</h3>
+            <p class="t-org">Veeam Software · Karachi</p>
+            <ul>
+              <li>Improved reliability and observability across production microservices — fault tolerance, monitoring and instrumentation in Go and Python — while shipping user-facing improvements on time.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="t-meta"><time>Dec 2022 — Jul 2024</time></div>
+          <div class="t-body">
+            <h3>Freelance Software Engineer</h3>
+            <p class="t-org">Top Rated Plus on Upwork · Remote</p>
+            <ul>
+              <li>Delivered a React/Django web app on AWS (EC2, S3, RDS, CodePipeline) for a litigation firm — 5-star review.</li>
+              <li>Deployed a YOLOv8 + Pytesseract ANPR system on Jetson Nano (~90% accuracy) and an AI session-transcription backend (Python/Django, MySQL, AWS), owned end-to-end.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="t-meta"><time>Feb 2022 — Jun 2023</time></div>
+          <div class="t-body">
+            <h3>Associate Software Engineer</h3>
+            <p class="t-org">KoderLabs · Karachi</p>
+            <ul>
+              <li>Built a computer-vision measurement pipeline (Python, OpenCV, Azure) at 80–85% accuracy, removing manual on-site surveys — sole engineer from spec to deployment.</li>
+              <li>Built the entire backend for a real-time social-news app solo (NestJS, TypeScript, MongoDB, WebSockets).</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2>Selected Projects</h2>
+      </div>
+      <div class="projects">
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-icon">🔐</span>
+            <a class="card-gh" href="https://github.com/AjaxAueleke/secrets-platform" target="_blank" rel="noopener noreferrer" aria-label="secrets-platform on GitHub">↗</a>
+          </div>
+          <h3>secrets-platform</h3>
+          <p>Self-hosted, multi-tenant secrets manager in Rust (Vault-style): versioned secrets, envelope encryption at rest, and a path-aware policy engine. Built to learn idiomatic Rust and API design.</p>
+          <ul class="tags"><li>Rust</li><li>axum</li><li>sqlx</li><li>PostgreSQL</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-icon">☁️</span>
+            <a class="card-gh" href="https://github.com/Moody-san/terraform-multicloud-infra" target="_blank" rel="noopener noreferrer" aria-label="terraform-multicloud-infra on GitHub">↗</a>
+          </div>
+          <h3>terraform-multicloud-infra</h3>
+          <p>Multi-cloud Terraform provisioning a highly-available Kubernetes + Galera platform across AWS, Azure and Oracle Cloud, joined by a BGP/IPSec VPN mesh, with a remote S3 + DynamoDB backend.</p>
+          <ul class="tags"><li>Terraform</li><li>AWS</li><li>Azure</li><li>OCI</li><li>Kubernetes</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-icon">🩺</span>
+            <a class="card-gh" href="https://github.com/AjaxAueleke/mgfrontend" target="_blank" rel="noopener noreferrer" aria-label="mgfrontend on GitHub">↗</a>
+          </div>
+          <h3>mgfrontend</h3>
+          <p>Patient storefront for a dermatology appointment platform — doctor search, appointment booking and Stripe payments. Built with Next.js, TypeScript and Redux Toolkit.</p>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Redux</li><li>Stripe</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-icon">📨</span>
+            <a class="card-gh" href="https://github.com/AjaxAueleke/machipc" target="_blank" rel="noopener noreferrer" aria-label="machipc on GitHub">↗</a>
+          </div>
+          <h3>machipc</h3>
+          <p>Mach-style message-passing IPC reimplemented in C++ over Linux UNIX sockets — ports, mailboxes, and a bootstrap server with a direct process-to-process message path.</p>
+          <ul class="tags"><li>C++</li><li>Systems</li><li>UNIX sockets</li><li>IPC</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-icon">📊</span>
+            <a class="card-gh" href="https://github.com/AjaxAueleke/algo-visualizer" target="_blank" rel="noopener noreferrer" aria-label="algo-visualizer on GitHub">↗</a>
+          </div>
+          <h3>algo-visualizer</h3>
+          <p>Real-time sorting-algorithm visualizer in Python &amp; pygame — watch bubble, insertion, merge, heap, quick, counting and radix sort run step-by-step.</p>
+          <ul class="tags"><li>Python</li><li>pygame</li><li>Algorithms</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-icon">🗂️</span>
+            <a class="card-gh" href="https://github.com/AjaxAueleke/patient-note-app" target="_blank" rel="noopener noreferrer" aria-label="patient-note-app on GitHub">↗</a>
+          </div>
+          <h3>patient-note-app</h3>
+          <p>Django REST backend for AI-assisted therapy session notes — secure S3 audio uploads and an async SQS transcription/summarisation pipeline.</p>
+          <ul class="tags"><li>Django</li><li>DRF</li><li>AWS S3</li><li>SQS</li></ul>
+        </article>
+      </div>
+      <p class="projects-more reveal">
+        More on <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">github.com/AjaxAueleke</a>
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills reveal">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul><li>Go</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Rust</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <ul><li>Django</li><li>NestJS</li><li>Beego</li><li>REST APIs</li><li>Distributed &amp; event-driven systems</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data</h3>
+          <ul><li>PostgreSQL</li><li>MongoDB</li><li>MySQL</li><li>Redis</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Cloud &amp; DevOps</h3>
+          <ul><li>AWS</li><li>GCP</li><li>Azure</li><li>Kubernetes (CKA)</li><li>Docker</li><li>Terraform</li><li>CI/CD</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>ML / CV</h3>
+          <ul><li>YOLOv8</li><li>OpenCV</li><li>Pytesseract</li><li>Jetson Nano</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION + CERTS -->
+    <section class="section" id="education">
+      <div class="section-head reveal">
+        <span class="section-num">05</span>
+        <h2>Education &amp; Certifications</h2>
+      </div>
+      <div class="edu reveal">
+        <div class="edu-card">
+          <h3>BS, Computer Science</h3>
+          <p class="t-org">FAST NUCES, Karachi · <time>Jul 2024</time></p>
+          <p>GPA 3.7 / 4.0 — Summa Cum Laude · 2× Rector's List · 4× Dean's List.</p>
+        </div>
+        <div class="edu-card">
+          <h3>Certified Kubernetes Administrator</h3>
+          <p class="t-org">CKA · Cloud Native Computing Foundation</p>
+          <p>Production-grade Kubernetes administration, networking and troubleshooting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="reveal">
+        <span class="section-num">06</span>
+        <h2>Let's talk</h2>
+        <p class="contact-lead">Open to backend / platform engineering roles. The fastest way to reach me is email.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:ahmed.jamil7410@gmail.com">ahmed.jamil7410@gmail.com</a>
+        <address class="contact-links">
+          <a href="https://github.com/AjaxAueleke" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhammad-ahmed-jamil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="tel:+923353221516">+92 335 3221516</a>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Muhammad Ahmed · Built from scratch, no template.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
